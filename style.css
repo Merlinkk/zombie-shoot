@@ -65,6 +65,7 @@ body {
     position: fixed;
     bottom: 35px;
     margin: 0 auto;
+    transition: width 0.5s ease;
 }
 
 #lives {
@@ -86,13 +87,17 @@ body {
     position: absolute;
     bottom: -100px;
     border-radius: 50%;
-    opacity: 0.5;
+    opacity: 0.8;
     animation: flying 5s infinite ease-in;
     z-index: 2;
     width: 30vw;
     height: 30vw;
     max-width: 150px;
     max-height: 150px;
+}
+
+.zombie-image:hover{
+    cursor: url('https://img.informer.com/icons/png/32/113/113532.png') 16 16, crosshair;
 }
 
 h2 {
@@ -110,6 +115,10 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+audio{
+    visibility: hidden;
 }
 
 @keyframes flying {

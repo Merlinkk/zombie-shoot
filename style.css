@@ -130,3 +130,11 @@ audio{
         bottom: 1080px;
     }
 }
+
+@media(max-width:501px) and (max-height:1001px){
+    .gameover-bg {
+        height: 109vh;
+        width: 111vw;
+        text-align: center;
+    }
+}

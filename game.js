@@ -30,6 +30,12 @@ function zombieGenerator(){
     zombie.setAttribute('id', `zombie`);
     zombie.classList.add('zombie-image');
 
+    zombie.onclick = () =>{
+      shotgun.pause();
+      shotgun.currentTime = 0;
+      shotgun.play();
+    }
+
     const zomContainer = document.getElementById('zombie-container')
 
     zomContainer.append(zombie)
